@@ -4,18 +4,15 @@ module.exports = function (grunt) {
     var pkg = grunt.file.readJSON('package.json');
 
     var lessFiles = {
-        "dist/neo-light.css": "less/style.less",
-        "dist/neo-dark.css": "less/dark.less",
+        "dist/destroystokyo.css": "less/style.less",
     };
 
     var replaceFiles = [
-        {src: ['dist/neo-light.css'], dest: 'dist/neo-light.css'},
-        {src: ['dist/neo-dark.css'], dest: 'dist/neo-dark.css'}
+        {src: ['dist/destroystokyo.css'], dest: 'dist/destroystokyo.css'}
     ];
 
     var cssMinFiles = {
-        'dist/neo-light.css': ['dist/neo-light.css'],
-        'dist/neo-dark.css': ['dist/neo-dark.css']
+        'dist/destroystokyo.css': ['dist/destroystokyo.css']
     };
 
 
@@ -115,21 +112,14 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'dist/neo-*.css'
+                src: 'dist/destroystokyo.css'
             }
         },
 
         imageEmbed: {
             light: {
-                src: ["dist/neo-light.css"],
-                dest: "dist/neo-light.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            },
-            dark: {
-                src: ["dist/neo-dark.css"],
-                dest: "dist/neo-dark.css",
+                src: ["dist/destroystokyo.css"],
+                dest: "dist/destroystokyo.css",
                 options: {
                     deleteAfterEncoding: false
                 }

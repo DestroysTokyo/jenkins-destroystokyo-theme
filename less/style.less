@@ -49,8 +49,9 @@ h3 {
   letter-spacing: 1px;
   padding: 3px;
   //Custom logo - path here
-  //background: url('logo.png') no-repeat, @color-primary;
-  //background-size: auto 45px, cover; 
+  background: url('logo.svg') no-repeat, @color-primary;
+  background-size: auto 30px, cover; 
+  background-position: 20px 9px;
 
   .login {
     top: inherit;
@@ -65,9 +66,10 @@ h3 {
       font-weight: 400;
     }
     //Custom logo - hide the default images, but retain the link
-    //#jenkins-home-link img {
-    //  opacity: 0;
-    //}
+    #jenkins-home-link img {
+      display: none;
+      opacity: 0;
+    }
   }
 
   .searchbox {
@@ -240,6 +242,10 @@ a#jenkins-home-link {
   opacity: 1 !important;
 }
 
+a#jenkins-home-link img {
+  opacity: 0 !important;
+}
+
 table.progress-bar.red td.progress-bar-done {
   background-color: @color-red !important;
   border-color: @color-red !important;
@@ -335,7 +341,7 @@ td {
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'neo2-theme @@version'
+  content: 'Powered by Tacos'
 }
 
 [style^="color:gray"] {

@@ -1,15 +1,13 @@
-# Jenkins Neo2 Theme
+# Jenkins DestroysTokyo Theme
 
-![license](https://img.shields.io/github/license/tobix/jenkins-neo2-theme.svg)
+![license](https://img.shields.io/github/license/destroystokyo/jenkins-destroystokyo-theme.svg)
 ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
-[![Build Status](https://travis-ci.org/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.org/TobiX/jenkins-neo2-theme)
+[![Build Status](https://travis-ci.com/DestroysTokyo/jenkins-destroystokyo-theme.svg?branch=master)](https://travis-ci.com/DestroysTokyo/jenkins-destroystokyo-theme)
 
-Beautify your Jenkins with the a modern flat theme!
+Beautify your Jenkins with a modern flat theme!
 
-Website: https://tobix.github.io/jenkins-neo2-theme
-
-This started as a fork to **jenkins-neo-theme**, which itself started as a fork
-to the **jenkins-material-theme**, but was developed further to work correctly
+This started as a fork to **jenkins-neo2-theme**, which itself started as a fork
+to the **jenkins-neo-theme**, but was developed further to work correctly
 with modern versions of Jenkins.
 
 
@@ -21,34 +19,7 @@ with modern versions of Jenkins.
 
 ## Screenshots
 
-![Start page](img/screenshot1.png)
-![Job page](img/screenshot2.png)
-
-
-## Installation
-
-### Using this GitHub page
-
-1. Install [Jenkins Simple Theme Plugin][simple]
-
-2. Click `Manage Jenkins`
-
-3. Click `Configure System` and scroll down to `Theme`
-
-4. Specify the URL for `https://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css`.
-
-5. Click `Save`
-
-
-### Using your Jenkins Hosting
-
-1. Copy the file
-   `https://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css` to the
-   directory `userContent` in your `JENKINS_HOME`
-
-2. Follow the steps of the previous method and use `/userContent/neo-light.css`
-   as the URL.
-
+![Start page](img/theme-screenshot1.png)
 
 ## Development
 
@@ -61,10 +32,7 @@ grunt
 
 This will generate the following file:
 
-- dist/neo-light.css
-- dist/neo-dark.css
-
-**Note: Theme neo-dark is WIP**
+- dist/destroystokyo.css
 
 ## Compatibility
 
@@ -82,6 +50,7 @@ MIT License
 
 ## Thanks to
 
+- [Jenkins neo2 theme][neo2] for the inspiration and original work
 - [Jenkins neo theme][neo] for the inspiration and original work
 - [Jenkins material theme][material] for the inspiration and original work
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
@@ -90,6 +59,7 @@ MIT License
 - [canon-jenkins][canon-jenkins] for the base theme
 - [@Heldroe][heldroe] for Firefox and Microsoft support
 
+[neo2]: https://github.com/TobiX/jenkins-neo2-theme
 [neo]: https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 [material]: https://github.com/afonsof/jenkins-material-theme
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin

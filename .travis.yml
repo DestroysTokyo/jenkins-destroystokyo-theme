@@ -3,11 +3,3 @@ node_js:
 - 9
 before_script:
 - npm install grunt-cli -g
-- .github/patch-version.sh
-# Push site to gh-pages branch
-deploy:
-  - provider: script
-    skip_cleanup: true
-    script: .github/deploy.sh
-    on:
-      branch: master
